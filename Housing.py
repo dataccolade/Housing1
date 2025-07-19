@@ -58,3 +58,5 @@ with col_pie:
     st.write("### Diagramme circulaire")
     fig_pie = px.pie(data, names=st.session_state.get("categorical_col", categorical_columns[0]), title="Diagramme circulaire")
     st.plotly_chart(fig_pie)
+
+st.write("Sources : " + "https://www.kaggle.com/datasets/camnugent/california-housing-prices")
